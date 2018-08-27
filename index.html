@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app='RefreshText'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.1.2.x.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Refresh Test</title>
+  </head>
+  <body>
+    <h1>AngularJS Variable Refreshing Test</h1>
+
+    <div ng-controller='Refresh as r1'>
+      <h3>Variable Refreshing< Test</h3> 
+      <input type="text" ng-model='r1.texto' placeholder="Write a Text">
+      <input type="text" ng-model='r1.addtext' placeholder="Write a text to concatenate">
+      <button ng-click='r1.addText();'>Add Text</button>
+      <button ng-click='r1.refreshText();'>Refresh Text</button>
+      <button ng-click='r1.addOne();'>Add One</button>
+      <div>
+        Inital text is: {{r1.texto}}
+        <br>
+        Current text to add is: {{r1.addtext}}
+        <br>
+        Complete text is: {{r1.totaltext}}
+        <br>
+        Integer currently is: {{r1.Integer}}
+        <br>
+        String currently is: {{r1.String}}
+        <br>
+        Array currently is: {{r1.Array}}
+      </div>
+    
+     
+    </div>
+
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html ng-app='DIApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.1.2.x.js"></script>
+    <script src="app.js"></script>
+    <title>Dependency Injection in Javascript
+           (and AngularJS)</title>
+  </head>
+  <body>
+    <h1>Dependency Injection in Javascript
+        (and AngularJS)</h1>
+    <div ng-controller='DIController'>
+      <input type="text"
+             ng-model="name"
+             ng-blur="upper();">
+             <input type="text" ng-model='texto' placeholder="Escribe un texto">
+             <input type="text" ng-model='addtext' placeholder="Escribe lo que quiere añadir">
+             <button ng-click='addText();'>Add Text</button>
+             <div>
+               El texto es: {{texto}}
+               El addtext es: {{addtext}}
+               El completo es: {{totaltext}}
+             </div>
+    </div>
+  </body>
+</html> -->
