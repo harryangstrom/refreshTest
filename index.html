@@ -11,14 +11,14 @@
     <h1>AngularJS Variable Refreshing Test</h1>
 
     <div ng-controller='Refresh as r1'>
-      <h3>Variable Refreshing< Test</h3> 
+      <h3>Variable Refreshing Test</h3> 
       <input type="text" ng-model='r1.texto' placeholder="Write a Text">
       <input type="text" ng-model='r1.addtext' placeholder="Write a text to concatenate">
       <button ng-click='r1.addText();'>Add Text</button>
       <button ng-click='r1.refreshText();'>Refresh Text</button>
       <button ng-click='r1.addOne();'>Add One</button>
       <div>
-        Inital text is: {{r1.texto}}
+        Initial text is: {{r1.texto}}
         <br>
         Current text to add is: {{r1.addtext}}
         <br>
